@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Header Area -->
-    <header>
+    <header id="home">
       <h1>Hi 👋, I am Priscilla Oluchukwu Ikeri</h1>
       <p>Web Developer | Tech Enthusiast | Lifelong Learner</p>
     </header>
@@ -231,5 +231,17 @@
     <footer>
       <p>&copy; 2025 Priscilla Oluchukwu Ikeri. All rights reserved.</p>
     </footer>
+    <a href="#home" id="back-to-top">⬆ Back to Top</a>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const btn = document.getElementById("back-to-top");
+        if (window.scrollY > 200) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+    </script>    
   </body>
 </html>
